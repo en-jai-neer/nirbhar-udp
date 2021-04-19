@@ -1,3 +1,9 @@
+# Jain Jai Sandeep - 2017A7PS1585H
+# Prateek Hiranandani - 2017B4A70578H
+# Sahil Nair - 2017B5A71317H
+# Jatin Arora - 2018A7PS0551H
+# Rusabh Rakesh Parikh - 2018A7PS1217H
+
 from sender import Sender
 import time
 from os import path
@@ -27,7 +33,7 @@ def server():
 
         data = dest_file_path + "%%$$##" + str(file_size)
         data = data.encode('utf-8')
-        print(data)
+        # print(data)
         sender.send(data)
         data_sent = 0
         with tqdm(total=file_size) as pbar:
